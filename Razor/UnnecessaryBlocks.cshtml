@@ -1,0 +1,25 @@
+@{
+    if (!string.IsNullOrWhiteSpace(Model.Section))
+    {
+        @Model.Section
+    }
+    else
+    {
+        @Model.FullName
+    }
+}
+
+@* Save 2 lines and indentation. *@
+
+@if (!string.IsNullOrWhiteSpace(Model.Section))
+{
+    @Model.Section
+}
+else
+{
+    @Model.FullName
+}
+
+@* Save another 7 lines and indentation, just as readable. *@
+
+@(!string.IsNullOrWhiteSpace(Model.Section) ? Model.Section : Model.FullName)
