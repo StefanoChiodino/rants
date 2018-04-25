@@ -1,7 +1,12 @@
-if (domains != null && domains.Length > 0)
+if (requestData.WebsitePage != null)
 {
-    // return the language id from the first domain
-    //currentLanguage = domains[0].Language.CultureAlias;
+    var domains = library.GetCurrentDomains(requestData.WebsitePage.Id);
+
+    if (domains != null && domains.Length > 0)
+    {
+        // return the language id from the first domain
+        //currentLanguage = domains[0].Language.CultureAlias;
+    }
 }
 
 
