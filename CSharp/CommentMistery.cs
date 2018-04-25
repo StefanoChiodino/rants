@@ -4,4 +4,6 @@ if (domains != null && domains.Length > 0)
     //currentLanguage = domains[0].Language.CultureAlias;
 }
 
+
+
 // Why was this commented out? What did it do before? We'll probably never know.
