@@ -1,0 +1,3 @@
+// Don't use doc types to group together other group types. E.g: if you have blocks don't create a "Block" doc type and have all blocks
+// inherit from it. Umbraco provides folder types on purpose. Once you create a doc type with inheritance is very very hard to move
+// around if you ever need to. Also remember composition > inheritance.
